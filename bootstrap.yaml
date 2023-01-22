@@ -1,0 +1,19 @@
+# Bootstrap python 3.10 environment
+name: bootstrap_python310
+channels:
+  - conda-forge
+  # Different users may have different defaults. Therefore, we turn off default
+  # channels to ensure reproducibility
+  - nodefaults
+dependencies:
+  - python=3.10.* # Update as needed
+  - pip
+  - poetry
+  - conda-lock
+  - toml
+  - mergedeep
+  - xonsh
+
+# Non-standard section listing target platforms for conda-lock
+platforms:
+  - linux-64
