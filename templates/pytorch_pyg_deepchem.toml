@@ -1,0 +1,38 @@
+[build-system]
+requires = "poetry-core"
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "dev_deps"
+version = "0.1.0"
+description = "Short project description"
+authors = [ "R. Justin Davis",]
+license = "MIT"
+readme = "README.md"
+[[tool.poetry.packages]]
+include = "dev_deps"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.11"
+torch = "^1.13.1"
+torchvision = "^0.14.1"
+torchaudio = "^0.13.1"
+deepchem = "^2.7.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+pytest-black = "^0.3.12"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.2"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.3.2"
+poethepoet = "^0.18.1"
+xonsh = "^0.13.4"
+
+[tool.poe.tasks]
+    [tool.poe.tasks.install-pyg]
+    help = "Install pyg dependencies"
+    cmd = "pip install pyg-lib torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-1.13.0+cu117.html"
