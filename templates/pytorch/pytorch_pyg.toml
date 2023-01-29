@@ -13,10 +13,13 @@ readme = "README.md"
 include = "dev_deps"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10, <3.11"
 torch = "^1.13.1"
 torchvision = "^0.14.1"
 torchaudio = "^0.13.1"
+seaborn = "^0.12.2"
+matplotlib = "^3.6.3"
+hvplot = "^0.8.2"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.2.1"

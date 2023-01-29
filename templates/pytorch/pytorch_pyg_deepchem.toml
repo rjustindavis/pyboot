@@ -18,6 +18,9 @@ torch = "^1.13.1"
 torchvision = "^0.14.1"
 torchaudio = "^0.13.1"
 deepchem = "^2.7.1"
+seaborn = "^0.12.2"
+matplotlib = "^3.6.3"
+hvplot = "^0.8.2"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.2.1"
