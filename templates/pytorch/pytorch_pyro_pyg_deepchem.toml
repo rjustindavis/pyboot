@@ -10,7 +10,7 @@ authors = [ "R. Justin Davis",]
 license = "MIT"
 readme = "README.md"
 [[tool.poetry.packages]]
-include = "pytorch_pyg_deepchem"
+include = "pytorch_pyro_pyg_deepchem"
 
 [tool.poetry.dependencies]
 python = ">=3.10, <3.11"
@@ -21,6 +21,7 @@ deepchem = "^2.7.1"
 seaborn = "^0.12.2"
 matplotlib = "^3.6.3"
 hvplot = "^0.8.2"
+pyro-ppl = "^1.8.4"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.2.1"

@@ -10,7 +10,7 @@ authors = [ "R. Justin Davis",]
 license = "MIT"
 readme = "README.md"
 [[tool.poetry.packages]]
-include = "dev_deps"
+include = "pytorch_pyg"
 
 [tool.poetry.dependencies]
 python = ">=3.10, <3.11"
